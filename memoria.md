@@ -14,7 +14,7 @@
 vBox: Archivo > administrador de red anfitrión
 ```
 
-![red virtual](https://github.com/Hec7or-Uniadsis-pr-4/blob/main/assets/redVirtual.jpg)
+![red virtual](https://github.com/Hec7or-Uni/adsis-pr-4/blob/main/assets/redVirtual.jpg)
 
 ### Maquinas
 
