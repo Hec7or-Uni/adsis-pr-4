@@ -1,4 +1,7 @@
-#!/usr/bin/bash
+#!/bin/bash
+#798095, Toral Pallas, Hector, M, 3, B
+#821259, Pizarro Martínez, Francisco Javier, M, 3, B
+
 if [ $# -eq 3 ]
 then
     while IFS= read -r ip
@@ -11,5 +14,6 @@ then
         else echo "${ip} no es accesible"
         fi
     done < $3
-else echo "Numero incorrecto de parametros"
+else 
+    echo "Numero incorrecto de parametros"
 fi
