@@ -70,7 +70,7 @@ No tienen por que ser esos números pero si que tienen que ser distintos entre s
 Una vez actualizado el fichero de configuración de red reinicia el servicio con el siguiente comando para que se vean los cambios.
 
 ```sh
-as@as:~$ sudo service networking reload
+as@as:~$ sudo systemctl restart networking
 ```
 
 Puedes comprobar que la configuración se ha realizado correctamente haciendo un ping a la otra maquina.
