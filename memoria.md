@@ -75,6 +75,29 @@ as@as:~$ sudo systemctl restart networking
 
 Puedes comprobar que la configuración se ha realizado correctamente haciendo un ping a la otra maquina.
 
+Para la maquina cliente:
+```
+# This file describes the network interfaces available on your system
+# and how to activate them. For more information, see interfaces(5).
+
+source /etc/network/interfaces.d/*
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+# The primary network interface
+allow-hotplug enp0s8
+iface enp0s8 inet dhcp
+
+# --------------------------------------------------
+auto enp0s3 
+iface enp0s3 inet static 
+  address 192.168.56.2
+  netmask 255.255.255.0
+# --------------------------------------------------
+```
+
 ## Configuración de acceso
 
 #### Cliente
